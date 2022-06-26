@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Main_Css.css">
+    <title>CryptoCurrency</title>
+
+    <style>
+        body {
+            background-image: url('BG2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            font-family: 'Times New Roman', serif;
+        }
+    </style>
+
+</head>
+<body><br><br>
+    <div class="container" > 
+        <div class="row justify-content-center"> <br>
+            <h1 class="col-md-7 text-center">CryptoCurrency Tracker</h1>
+            <h4 class="col-md-7 text-center">by Jnanesh Vavilala</h4>
+            <br>
+            
+            <div class="col-md-6 row justify-content-center main fix" id="allContaint">
+                <div class="col-md-10">
+                    <form  action="" id="searchForm">
+                        <!-- ; style = "background-color:#14213d" -->
+                        <div class="form-row">
+                            <div class="col-12 form-group">
+                                <label for="xyz" > <b>Coin Type</b></label>
+                                <select name="coinType" class= "form-control" id="xyz">
+                                    <option value="bitcoin">Bitcoin</option>
+                                    <option value="dogecoin">Dogecoin</option>
+                                    <option value="ethereum">Ethereum</option>
+                                    <option value="solana">Solana</option>
+                                    <option value="tether">Tether</option>
+                                    <option value="cardano">Cardano</option>
+                                    <option value="polkadot">Polkadot</option>
+                        
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="col-12 form-group">
+                                <label for="xyz1" ><b>Currency Type</b></label>
+                                <select name="currType" class= "form-control" id="xyz1">
+                                    <option value="INR">Rupee</option>
+                                    <option value="USD">Dollar</option>
+                                    <option value="EUR">EURO</option>
+                                    <option value="CNY">Yuan</option>
+                                    <option value="DZD">Dinar</option>
+                                    <option value="YPY">Japanese Yen</option>
+                                                           
+                                </select>
+                            </div>
+                        </div>
+
+                        
+                        <button type="submit" class="col-12 btn btn-primary"> Get-Price</button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="col-md-7 text-center row justify-content-center ">
+                <table class="col-md-7 m-2 " border="1px" id='tableResult' >
+                    
+                </table>
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js" > </script>
+</body>
+
+</html>
